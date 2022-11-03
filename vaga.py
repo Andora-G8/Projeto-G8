@@ -25,7 +25,7 @@ def verificar_vaga(escolhaShopping, escolhaLoja, escolhaVaga):
             print('Vaga ocupada, escolha outra vaga.')
             escolhaVaga = input('Selecione a vaga: ').upper()
         else:
-            print('Vaga selecionada com sucesso!')
+            print(f'Vaga {escolhaVaga} selecionada com sucesso! Você tem 1 hora para chegar até a sua vaga!')
             credenciados[escolhaShopping][escolhaLoja][escolhaVaga] = 'Ocupada'
             print(credenciados[escolhaShopping][escolhaLoja])
             break
