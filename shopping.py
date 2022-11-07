@@ -5,13 +5,14 @@ credenciados = {'1': 'Shopping Tacaruna',
                 '4': 'Shopping Plaza',
                 '5': 'Camará Shopping'}
 
-def selecionar_shopping():
+def selecionar_shopping(): #primeira função quando o código inicia
     escolhaShopping = 0
-    while escolhaShopping not in credenciados:
-        print(credenciados)
-        escolhaShopping = input('Selecione o shopping: ')
-        if escolhaShopping in credenciados.keys():
-            print(credenciados[escolhaShopping])
+    while escolhaShopping not in credenciados: 
+        print(credenciados) # Se o shopping não estiver em credenciados print os credenciados
+        escolhaShopping = input('Selecione o shopping: ') # Atribui um novo valor a variável escolhaShopping, referente
+        # ao shopping que a pessoa quer ir.
+        if escolhaShopping in credenciados.keys(): # Se a chave estiver em credenciados ele printa a escolha 
+            print(f"\nO local escolhido foi o {credenciados[escolhaShopping]}\n")
         elif escolhaShopping not in credenciados:
-            print("Comando inválido. Escolha um código válido!")
+            print("\nComando inválido. Escolha um código válido!\n")
     return escolhaShopping
