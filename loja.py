@@ -21,13 +21,18 @@ credenciados = {
         # lojas j, i ligadas a loja C
     },
     '2': { #Shopping Recife => Sem vagas relacionadas a este shopping 
-        'a': 'Camicado',
-        'b': 'Tokstok',
+        'a': 'Coco bambu',
+        'b': 'Banco do Brasil',
         'c': 'Riachuelo',
+        'd': 'Praça de Alimentação'
     },
     '3':{ # Shopping Rio Mar => Sem vagas relacionadas a este shopping
         'a': 'Renner',
         'b': 'McDonalds',
+        'c': 'Americanas',
+        'd':  'Diagmax',
+        'e': 'Tokstok'
+        # ##
     }
 }
 
@@ -43,9 +48,7 @@ def escolher_loja(escolhaShopping):
             escolhaLoja = "b"
         elif escolhaLoja == "j" or escolhaLoja == "i":
             escolhaLoja = "c"
-        if escolhaLoja in credenciados[escolhaShopping].keys(): # 
-            #if escolhaLoja =='h':
-                 #credenciados[escolhaShopping][escolhaLoja].keys()
+        if escolhaLoja in credenciados[escolhaShopping].keys(): 
             print(f"\nA entrada mais próxima da loja selecionada é {credenciados[escolhaShopping][escolhaLoja]}\n")
         elif escolhaLoja not in credenciados[escolhaShopping]:
             print("\nComando inválido. Escolha um comando correspondente.\n")

@@ -15,22 +15,48 @@ credenciados = {
             'G1-213': 'Disponível',
         },
         'b': {
-            'B1': 'Ocupada',
-            'B2': 'Disponível',
-            'B3': 'Disponível', 
-            'B4': 'Ocupada',
-            'B5': 'Disponível',
-            'B6': 'Disponível',
-            'B7': 'Ocupada',
-            'B8': 'Disponível',
-            'B9': 'Disponível',
-            'B10':'Disponível',
+            'G2-246': 'Ocupada',
+            'G2-217': 'Disponível',
+            'G2-247': 'Disponível', 
+            'G2-216': 'Ocupada',
+            'G2-248': 'Disponível',
+            'G2-215': 'Disponível',
+            'G2-249': 'Ocupada',
+            'G2-214': 'Disponível',
+            'G2-250': 'Disponível',
+            'G2-213':'Disponível',
         },
-        'c': { # COLOCAR MAIS VAGAS
-            'A1': 'Disponível',
-            'A2': 'Disponível',
-            'A3': 'Disponível', 
+        'c': { 
+            'G3-246': 'Disponível',
+            'G3-217': 'Ocupada',
+            'G3-247': 'Disponível', 
+            'G3-216': 'Ocupada',
+            'G3-248': 'Ocupada',
+            'G3-215': 'Disponível',
+            'G3-249': 'Ocupada',
+            'G3-214': 'Ocupada',
+            'G3-250': 'Disponível',
+            'G3-213': 'Disponível',
         }
+    },
+    '2': {
+        'a':{
+            'G1-171': 'Ocupada',
+            'G1-172': 'Disponível',
+            'G1-173': 'Disponível',
+            'G1-216': 'Disponível',
+            'G1-248': 'Disponível',
+            'G1-215': 'Disponível',
+            'G1-249': 'Ocupada',
+            'G1-214': 'Ocupada',
+            'G1-250': 'Disponível',
+            'G1-213': 'Disponível',
+        },
+    },
+    '3':{
+        'a': {
+
+        },
     }
 }
 
