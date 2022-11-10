@@ -13,6 +13,6 @@ def selecionar_shopping(): #primeira função quando o código inicia
         # ao shopping que a pessoa quer ir.
         if escolhaShopping in credenciados.keys(): # Se a chave estiver em credenciados ele printa a escolha 
             print(f"\nO local escolhido foi o {credenciados[escolhaShopping]}\n")
-        elif escolhaShopping not in credenciados:
+        else:
             print("\nComando inválido. Escolha um código válido!\n")
     return escolhaShopping

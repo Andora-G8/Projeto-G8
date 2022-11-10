@@ -50,6 +50,6 @@ def escolher_loja(escolhaShopping):
             escolhaLoja = "c"
         if escolhaLoja in credenciados[escolhaShopping].keys(): 
             print(f"\nA entrada mais próxima da loja selecionada é {credenciados[escolhaShopping][escolhaLoja]}\n")
-        elif escolhaLoja not in credenciados[escolhaShopping]:
+        else:
             print("\nComando inválido. Escolha um comando correspondente.\n")
     return escolhaLoja
