@@ -60,16 +60,6 @@ credenciados = {
     }
 }
 
-def verificar_vaga(escolhaShopping, escolhaLoja, escolhaVaga):
-    while escolhaVaga in credenciados[escolhaShopping][escolhaLoja]:
-        if credenciados[escolhaShopping][escolhaLoja][escolhaVaga] == 'Ocupada':
-            print('Vaga ocupada, escolha outra vaga.')
-            escolhaVaga = input('Selecione a vaga: ').upper()
-        else:
-            print(f'\nVaga {escolhaVaga} selecionada com sucesso! Você tem 1 hora para chegar até a sua vaga!\n')
-            credenciados[escolhaShopping][escolhaLoja][escolhaVaga] = 'Ocupada'
-            break
-
 def selecionar_vaga(escolhaShopping, escolhaLoja): # A função pode receber zero ou mais parâmetros
     escolhaVaga = 0
     while escolhaVaga not in credenciados[escolhaShopping][escolhaLoja]:
@@ -77,6 +67,10 @@ def selecionar_vaga(escolhaShopping, escolhaLoja): # A função pode receber zer
         escolhaVaga = input('\nSelecione a vaga: ').upper()
         if escolhaVaga not in credenciados[escolhaShopping][escolhaLoja]:
             print ("\nComando inválido. Escolha um comando correspondente.\n")
-            
-        verificar_vaga(escolhaShopping, escolhaLoja, escolhaVaga)
+        elif credenciados[escolhaShopping][escolhaLoja][escolhaVaga] == 'Disponível':
+            print(f'\nVaga {escolhaVaga} selecionada com sucesso! Você tem 1 hora para chegar até a sua vaga!\n')
+            credenciados[escolhaShopping][escolhaLoja][escolhaVaga] = 'Ocupada'
+        else:
+            print('Vaga ocupada, escolha outra vaga.')
+            escolhaVaga = 0
     return escolhaVaga
