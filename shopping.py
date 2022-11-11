@@ -1,18 +1,26 @@
-# Criar lista/dicionário?? de credenciados
+import os
+
 credenciados = {'1': 'Shopping Tacaruna',
                 '2': 'Shopping Recife',
                 '3': 'Shopping Rio Mar',
                 '4': 'Shopping Plaza',
                 '5': 'Camará Shopping'}
 
-def selecionar_shopping(): #primeira função quando o código inicia
-    escolhaShopping = 0
-    while escolhaShopping not in credenciados: 
-        print(credenciados) # Se o shopping não estiver em credenciados print os credenciados
-        escolhaShopping = input('Selecione o shopping: ') # Atribui um novo valor a variável escolhaShopping, referente
-        # ao shopping que a pessoa quer ir.
-        if escolhaShopping in credenciados.keys(): # Se a chave estiver em credenciados ele printa a escolha 
-            print(f"\nO local escolhido foi o {credenciados[escolhaShopping]}\n")
-        else:
-            print("\nComando inválido. Escolha um código válido!\n")
-    return escolhaShopping
+def selecionar_shopping(): 
+    escolha_shopping = 0
+
+    print('Digite o código do shopping que desejado!\n')
+
+    for index in range(len(credenciados)):
+        print(f'{index+1} → {credenciados['1']}')
+
+    escolha_shopping = int(input('\nSelecione o shopping: '))
+
+    if escolha_shopping == 1: 
+        print('Shopping Tacaruna')
+
+    elif escolha_shopping == 2: 
+        print('Shopping Recife')
+            
+    elif escolha_shopping == 3: 
+        print('Shopping Rio Mar')

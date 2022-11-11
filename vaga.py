@@ -1,76 +1,60 @@
-# Criar lista/dicionário de vagas
-
+import os
 credenciados = {
-    '1': {
-        'a': {
-            'G1-246': 'Ocupada',
-            'G1-217': 'Disponível',
-            'G1-247': 'Disponível',
-            'G1-216': 'Disponível',
-            'G1-248': 'Disponível',
-            'G1-215': 'Disponível',
-            'G1-249': 'Ocupada',
-            'G1-214': 'Ocupada',
-            'G1-250': 'Disponível',
-            'G1-213': 'Disponível',
-        },
-        'b': {
-            'G2-246': 'Ocupada',
-            'G2-217': 'Disponível',
-            'G2-247': 'Disponível', 
-            'G2-216': 'Ocupada',
-            'G2-248': 'Disponível',
-            'G2-215': 'Disponível',
-            'G2-249': 'Ocupada',
-            'G2-214': 'Disponível',
-            'G2-250': 'Disponível',
-            'G2-213':'Disponível',
-        },
-        'c': { 
-            'G3-246': 'Disponível',
-            'G3-217': 'Ocupada',
-            'G3-247': 'Disponível', 
-            'G3-216': 'Ocupada',
-            'G3-248': 'Ocupada',
-            'G3-215': 'Disponível',
-            'G3-249': 'Ocupada',
-            'G3-214': 'Ocupada',
-            'G3-250': 'Disponível',
-            'G3-213': 'Disponível',
-        }
-    },
-    '2': {
-        'a':{
-            'G1-171': 'Ocupada',
-            'G1-172': 'Disponível',
-            'G1-173': 'Disponível',
-            'G1-216': 'Disponível',
-            'G1-248': 'Disponível',
-            'G1-215': 'Disponível',
-            'G1-249': 'Ocupada',
-            'G1-214': 'Ocupada',
-            'G1-250': 'Disponível',
-            'G1-213': 'Disponível',
-        },
-    },
-    '3':{
-        'a': {
+        '1': {
+            'a': {
+                'G1-246': 'Ocupada',
+                'G1-217': 'Disponível',
+                'G1-247': 'Disponível',
+                'G1-216': 'Disponível',
+                'G1-248': 'Disponível',
+                'G1-215': 'Disponível',
+                'G1-249': 'Ocupada',
+                'G1-214': 'Ocupada',
+                'G1-250': 'Disponível',
+                'G1-213': 'Disponível',},
 
-        },
+          'b': {'B1': 'Ocupada',
+                'B2': 'Disponível',
+                'B3': 'Disponível', 
+                'B4': 'Ocupada',
+                'B5': 'Disponível',
+                'B6': 'Disponível',
+                'B7': 'Ocupada',
+                'B8': 'Disponível',
+                'B9': 'Disponível',
+                'B10':'Disponível',},
+
+          'c': {'A1': 'Disponível',
+                'A2': 'Disponível',
+                'A3': 'Disponível',}
     }
 }
 
-def selecionar_vaga(escolhaShopping, escolhaLoja): # A função pode receber zero ou mais parâmetros
-    escolhaVaga = 0
-    while escolhaVaga not in credenciados[escolhaShopping][escolhaLoja]:
-        print(credenciados[escolhaShopping][escolhaLoja])
-        escolhaVaga = input('\nSelecione a vaga: ').upper()
-        if escolhaVaga not in credenciados[escolhaShopping][escolhaLoja]:
-            print ("\nComando inválido. Escolha um comando correspondente.\n")
-        elif credenciados[escolhaShopping][escolhaLoja][escolhaVaga] == 'Disponível':
-            print(f'\nVaga {escolhaVaga} selecionada com sucesso! Você tem 1 hora para chegar até a sua vaga!\n')
-            credenciados[escolhaShopping][escolhaLoja][escolhaVaga] = 'Ocupada'
+def selecionar_vaga(escolha_shopping, escolha_loja):
+    escolha_vaga = 0
+
+    while escolha_vaga not in credenciados[escolha_shopping][escolha_loja]:
+        print(credenciados[escolha_shopping][escolha_loja])
+        escolha_vaga = input('\nSelecione a vaga: ').upper()
+
+        if escolha_vaga not in credenciados[escolha_shopping][escolha_loja]:
+            os.system('cls')
+            print('Vaga INVÁLIDA. Escolha uma vaga existente!\n')
+            
+        verificar_vaga(escolha_shopping, escolha_loja, escolha_vaga)
+
+    return escolha_vaga
+
+def verificar_vaga(escolha_shopping, escolha_loja, escolha_vaga):
+    while escolha_vaga in credenciados[escolha_shopping][escolha_loja]:
+        if credenciados[escolha_shopping][escolha_loja][escolha_vaga] == 'Ocupada':
+            os.system('cls')
+            print('Vaga OCUPADA, escolha outra vaga!\n')
+            print(credenciados[escolha_shopping][escolha_loja])
+            escolha_vaga = input('\nSelecione a vaga: ').upper()
+
         else:
-            print('Vaga ocupada, escolha outra vaga.')
-            escolhaVaga = 0
-    return escolhaVaga
+            os.system('cls')
+            print(f'Vaga {escolha_vaga} selecionada com SUCESSO! Você tem 1 hora para chegar até a sua vaga!')
+            credenciados[escolha_shopping][escolha_loja][escolha_vaga] = 'Ocupada'
+            break

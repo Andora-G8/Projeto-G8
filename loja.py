@@ -1,55 +1,50 @@
-# Mostrar apenas vagas disponíveis
-# Lista referente a loja dizendo quantas vagas tem em cada uma daquelas lojas => Mostrar 
-#               quantas vagas disponíneis em cada uma das lojas 
-# 
-# ##
+import os
+
 credenciados = {
-    '1': {
-        'a': 'Renner',
+    '1': {'a': 'Renner',
         'b': 'C&A',
         'c': 'Tokstok',
-        'd': 'Hiper', # Tupla com nome da loja e loja de vaga mais próxima pra assim ele inspecionar quais lojas próximas tem vagas
+        'd': 'Hiper', 
         'e': 'Leitura',
         'f': 'Americanas',
         'g': 'Casas Bahia',
         'h': 'Le Biscuit',
         'i': 'Riachuelo',
-        'j': 'Jurandir Pires',
-        # 10 lojas, as 3 primeiras são lojas âncoras e as demais são lojas secundárias
-        # lojas d, e , f ligadas a loja A
-        # lojas g, h ligadas a loja B
-        # lojas j, i ligadas a loja C
-    },
-    '2': { #Shopping Recife => Sem vagas relacionadas a este shopping 
-        'a': 'Coco bambu',
+        'j': 'Jurandir Pires',},
+
+    '2': {'a': 'Coco bambu',
         'b': 'Banco do Brasil',
         'c': 'Riachuelo',
-        'd': 'Praça de Alimentação'
-    },
-    '3':{ # Shopping Rio Mar => Sem vagas relacionadas a este shopping
-        'a': 'Renner',
+        'd': 'Praça de Alimentação'},
+
+    '3':{ 'a': 'Renner',
         'b': 'McDonalds',
         'c': 'Americanas',
         'd':  'Diagmax',
         'e': 'Tokstok'
-        # ##
     }
 }
 
-def escolher_loja(escolhaShopping):
-    escolhaLoja = 0
-    while escolhaLoja not in credenciados[escolhaShopping]: # Após a escolha do shopping ele verifica as lojas          
-        # Referentes aquele shopping credenciado
-        print(credenciados[escolhaShopping]) # Printa as lojas referentes ao shopping 
-        escolhaLoja = input('Selecione a loja: ').lower() # Pede a loja que o cliente deseja
-        if escolhaLoja == "d" or escolhaLoja == "e" or escolhaLoja == "f" :
-            escolhaLoja = "a"
-        elif escolhaLoja == "g" or escolhaLoja == "h":
-            escolhaLoja = "b"
-        elif escolhaLoja == "j" or escolhaLoja == "i":
-            escolhaLoja = "c"
-        if escolhaLoja in credenciados[escolhaShopping].keys(): 
-            print(f"\nA entrada mais próxima da loja selecionada é {credenciados[escolhaShopping][escolhaLoja]}\n")
+def escolher_loja(escolha_shopping):
+    escolha_loja = 0
+    
+    while escolha_loja not in credenciados[escolha_shopping]:    
+        print(credenciados[escolha_shopping]) 
+        escolha_loja = input('\nSelecione a loja: ').lower() 
+
+        if escolha_loja == "d" or escolha_loja == "e" or escolha_loja == "f" :
+            escolha_loja = "a"
+
+        elif escolha_loja == "g" or escolha_loja == "h":
+            escolha_loja = "b"
+
+        elif escolha_loja == "j" or escolha_loja == "i":
+            escolha_loja = "c"
+
+        if escolha_loja in credenciados[escolha_shopping].keys():
+            os.system('cls') 
+            print(f"A entrada mais próxima da loja selecionada é: {credenciados[escolha_shopping][escolha_loja]}\n")
         else:
-            print("\nComando inválido. Escolha um comando correspondente.\n")
-    return escolhaLoja
+            os.system('cls')
+            print("Loja INVÁLIDA. Escolha uma loja existente.\n")
+    return escolha_loja
