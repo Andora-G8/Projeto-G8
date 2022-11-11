@@ -11,10 +11,14 @@ def selecionar_shopping():
 
     print('Digite o código do shopping que desejado!\n')
 
-    for index in range(len(credenciados)):
-        print(f'{index+1} → {credenciados['1']}')
+    for chave in credenciados.keys():
+        print(f'{chave} → {credenciados[chave]}')
 
-    escolha_shopping = int(input('\nSelecione o shopping: '))
+    
+    #for index in range(len(credenciados)):
+        #print(f'{index+1} → {credenciados["1"]}')
+
+    escolha_shopping = input('\nSelecione o shopping: ')
 
     if escolha_shopping == 1: 
         print('Shopping Tacaruna')
@@ -24,3 +28,5 @@ def selecionar_shopping():
             
     elif escolha_shopping == 3: 
         print('Shopping Rio Mar')
+
+    return escolha_shopping

@@ -2,18 +2,19 @@ import os
 credenciados = {
         '1': {
             'a': {
-                'G1-246': 'Ocupada',
-                'G1-217': 'Disponível',
-                'G1-247': 'Disponível',
-                'G1-216': 'Disponível',
-                'G1-248': 'Disponível',
-                'G1-215': 'Disponível',
-                'G1-249': 'Ocupada',
-                'G1-214': 'Ocupada',
-                'G1-250': 'Disponível',
-                'G1-213': 'Disponível',},
+                'A-250': 'Ocupada',
+                'A-251': 'Disponível',
+                'A-252': 'Disponível',
+                'A-253': 'Disponível',
+                'A-254': 'Disponível',
+                'A-255': 'Disponível',
+                'A-256': 'Ocupada',
+                'A-257': 'Ocupada',
+                'A-258': 'Disponível',
+                'A-259': 'Disponível',},
 
-          'b': {'B1': 'Ocupada',
+          'b': {
+                'B1': 'Ocupada',
                 'B2': 'Disponível',
                 'B3': 'Disponível', 
                 'B4': 'Ocupada',
@@ -34,7 +35,10 @@ def selecionar_vaga(escolha_shopping, escolha_loja):
     escolha_vaga = 0
 
     while escolha_vaga not in credenciados[escolha_shopping][escolha_loja]:
-        print(credenciados[escolha_shopping][escolha_loja])
+        
+        for chave in credenciados[escolha_shopping][escolha_loja].keys():
+            print(f'{chave} → {credenciados[escolha_shopping][escolha_loja][chave]}')
+
         escolha_vaga = input('\nSelecione a vaga: ').upper()
 
         if escolha_vaga not in credenciados[escolha_shopping][escolha_loja]:

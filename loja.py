@@ -29,7 +29,10 @@ def escolher_loja(escolha_shopping):
     escolha_loja = 0
     
     while escolha_loja not in credenciados[escolha_shopping]:    
-        print(credenciados[escolha_shopping]) 
+
+        for chave in credenciados[escolha_shopping].keys():
+            print(f'{chave} → {credenciados[escolha_shopping][chave]}')
+
         escolha_loja = input('\nSelecione a loja: ').lower() 
 
         if escolha_loja == "d" or escolha_loja == "e" or escolha_loja == "f" :
