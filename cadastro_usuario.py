@@ -1,10 +1,5 @@
 import random
-
-def gerar_pin_id():
-    pin_id = ''
-    for i in range(0,5):
-        pin_id += str(random.randint(0,5))
-    return pin_id
+import os
 
 def cadastrar(usuario,senha):
     arq = open('H:\Arquivos\Programação\Python\Projetos - G8 [2022.2]\cadastro.txt', 'a')
@@ -29,6 +24,12 @@ def verificar_usuario(usuario):
             return True
     return False
 
+def gerar_pin_id():
+    pin_id = ''
+    for i in range(0,5):
+        pin_id += str(random.randint(0,5))
+    return pin_id
+
 def menu():
     print('[1] - Cadastrar')
     print('[2] - Login')
@@ -37,22 +38,27 @@ def registro():
     opcao = -1
     while opcao != 3:
         menu()
-        opcao = int(input('Digite uma opção: '))
+        opcao = int(input('\nDigite uma opção: '))
         if opcao == 1:
-            usuario = input('Digite o usuário: ')
+            usuario = input('\nDigite o usuário: ')
             senha = input('Digite a senha: ')
             if verificar_usuario(usuario):
-                print('Usuário já cadastrado!')
+                os.system('cls')
+                print('\nUsuário já cadastrado!\n')
             else:
                 cadastrar(usuario,senha)
-                print('Usuário cadastrado com sucesso!')
+                os.system('cls')
+                print('\nUsuário cadastrado com sucesso!\n')
         elif opcao == 2:
-            usuario = input('Digite o usuário: ')
+            usuario = input('\nDigite o usuário: ')
             senha = input('Digite a senha: ')
             if login(usuario,senha):
-                print('Login efetuado com sucesso!')
+                os.system('cls')
+                print('\nLogin efetuado com sucesso!')
                 opcao = 3
             else:
-                print('Usuário ou senha inválidos!')
+                os.system('cls')
+                print('\nUsuário ou senha inválidos!\n')
         else:
-            print('Opção inválida!')
+            os.system('cls')
+            print('\nOpção inválida!')
