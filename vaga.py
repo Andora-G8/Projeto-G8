@@ -54,7 +54,8 @@ def verificar_vaga(escolha_shopping, escolha_loja, escolha_vaga):
         if credenciados[escolha_shopping][escolha_loja][escolha_vaga] == 'Ocupada':
             os.system('cls')
             print('Vaga OCUPADA, escolha outra vaga!\n')
-            print(credenciados[escolha_shopping][escolha_loja])
+            for chave in credenciados[escolha_shopping][escolha_loja].keys():
+                print(f'{chave} → {credenciados[escolha_shopping][escolha_loja][chave]}')
             escolha_vaga = input('\nSelecione a vaga: ').upper()
 
         else:
@@ -62,3 +63,4 @@ def verificar_vaga(escolha_shopping, escolha_loja, escolha_vaga):
             print(f'Vaga {escolha_vaga} selecionada com SUCESSO! Você tem 1 hora para chegar até a sua vaga!')
             credenciados[escolha_shopping][escolha_loja][escolha_vaga] = 'Ocupada'
             break
+        
