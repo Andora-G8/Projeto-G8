@@ -9,14 +9,10 @@ credenciados = {'1': 'Shopping Tacaruna',
 def selecionar_shopping(): 
     escolha_shopping = 0
 
-    print('Digite o código do shopping que desejado!\n')
+    print('\nDigite o código do shopping desejado: \n')
 
     for chave in credenciados.keys():
         print(f'{chave} → {credenciados[chave]}')
-
-    
-    #for index in range(len(credenciados)):
-        #print(f'{index+1} → {credenciados["1"]}')
 
     escolha_shopping = input('\nSelecione o shopping: ')
 
