@@ -1,0 +1,6 @@
+cliente_ID,shopping_nome,loja_nome,vaga_id,reserva_chegada_confirmada,reserva_data,reserva_chegada_hora,reserva_saida_hora
+64364,Shopping Tacaruna,Renner,A-253,True,15/11/2022,21:38,21:38
+94274,Shopping Rio Mar,Renner,A-251,True,15/11/2022,20:28,20:28
+16878,Camará Shopping,Centauro,R-113,True,15/11/2022,20:17,20:17
+16878,Shopping Tacaruna,C&A,R-113,True,15/11/2022,20:15,20:15
+

@@ -9,20 +9,22 @@ credenciados = {'1': 'Shopping Tacaruna',
 def selecionar_shopping(): 
     escolha_shopping = 0
 
-    print('\nDigite o código do shopping desejado: \n')
+    while escolha_shopping not in credenciados:
 
-    for chave in credenciados.keys():
-        print(f'{chave} → {credenciados[chave]}')
+        print('\nDigite o código do shopping desejado: \n')
 
-    escolha_shopping = input('\nSelecione o shopping: ')
+        for chave in credenciados.keys():
+            print(f'{chave} → {credenciados[chave]}')
 
-    if escolha_shopping == 1: 
-        print('Shopping Tacaruna')
+        escolha_shopping = input('\nSelecione o shopping: ')
 
-    elif escolha_shopping == 2: 
-        print('Shopping Recife')
-            
-    elif escolha_shopping == 3: 
-        print('Shopping Rio Mar')
+        if escolha_shopping in credenciados.keys():
+            os.system('cls') 
+            print(f"O Shopping escolhido é: {credenciados[escolha_shopping]}\n")
+        
+        else:
+            os.system('cls')
+            print('Shopping INVÁLIDO. Escolha um Shopping existente!\n')
 
-    return escolha_shopping
+    return escolha_shopping, credenciados[escolha_shopping]
+

@@ -1,0 +1,9 @@
+Cristina;12345;52203
+cristina@gmail.com;eraumavez;53545
+Maria;12345;04454
+JoseFerreira;12345;01403
+d;d;45421
+Janice;12345;16878
+Ju;123;94274
+Ju ;1234;32695
+Marcos;12345;64364

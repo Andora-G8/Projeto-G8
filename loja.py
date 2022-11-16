@@ -2,28 +2,45 @@ import os
 
 credenciados = {
     '1': {'a': 'Renner',
-        'b': 'C&A',
-        'c': 'Tokstok',
-        'd': 'Hiper', 
-        'e': 'Leitura',
-        'f': 'Americanas',
-        'g': 'Casas Bahia',
-        'h': 'Le Biscuit',
-        'i': 'Riachuelo',
-        'j': 'Jurandir Pires',},
+          'b': 'C&A',
+          'c': 'Tokstok',
+          'd': 'Hiper', 
+          'e': 'Leitura',
+          'f': 'Americanas',
+          'g': 'Casas Bahia',
+          'h': 'Le Biscuit',
+          'i': 'Riachuelo',
+          'j': 'Jurandir Pires',},
 
     '2': {'a': 'Coco bambu',
-        'b': 'Banco do Brasil',
-        'c': 'Riachuelo',
-        'd': 'Praça de Alimentação'},
+          'b': 'Banco do Brasil',
+          'c': 'Riachuelo',
+          'd': 'Praça de Alimentação'},
 
     '3':{ 'a': 'Renner',
-        'b': 'McDonalds',
-        'c': 'Americanas',
-        'd':  'Diagmax',
-        'e': 'Tokstok'
-    }
+          'b': 'McDonalds',
+          'c': 'Americanas',
+          'd': 'Diagmax',
+          'e': 'Tokstok'},
+
+    '4':{ 'a': 'Donna Brigadeiro',
+          'b': 'Detran',
+          'c': 'Americanas',
+          'd': 'Hiper Bompreço',
+          'e': 'Kalunga'},
+
+    '5':{ 'a': 'Nagem',
+          'b': 'Centauro',
+          'c': 'Americanas',
+          'd': 'Game Station',
+          'e': 'Big Bompreço',
+          'f': 'Marisa',
+          'g': 'Toli',
+          'h': 'Farm',
+          'i': 'Saraiva',
+          'j': 'Tokstok'},
 }
+
 
 def escolher_loja(escolha_shopping):
     escolha_loja = 0
@@ -50,4 +67,4 @@ def escolher_loja(escolha_shopping):
         else:
             os.system('cls')
             print("Loja INVÁLIDA. Escolha uma loja existente.\n")
-    return escolha_loja
+    return escolha_loja, credenciados[escolha_shopping][escolha_loja]
