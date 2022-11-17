@@ -130,7 +130,7 @@ while menu_logado != 3:
 As seguintes ferramentas foram usadas na construção do projeto:
 
 -   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Park-It)](https://www.figma.com/file/cTrUrQRjeA1Emni3fBkZ3x/Park-It?t=XV19CuVurGtJTO15-0)**
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Extensions:  **[Pandas](https://pandas.pydata.org/)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Lib:  **[Pandas](https://pandas.pydata.org/)**
 -   Ícones:  **[Iconify](https://iconify.design/)**
 -   Fontes:  **[Roboto](https://fonts.google.com/specimen/Roboto)**, **[Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed??query=roboto)**, **[Inter](https://fonts.google.com/specimen/Inter)** 
 
