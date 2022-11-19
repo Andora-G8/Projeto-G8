@@ -142,18 +142,18 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <table>
   <tr>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Carlos Augusto</b></sub></a><br /></a></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Cristina Matsunaga</b></sub></a><br /></a></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Ester Carvalho</b></sub></a><br /></a></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Luiz Felipe</b></sub></a><br /></a></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Ivy Pires</b></sub></a><br /></a></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Matheus Canel</b></sub></a><br /></a></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/117591564?v=4" width="100px;" alt=""/><br /><sub><b>Carlos Augusto</b></sub></a><br /></a></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104402971?v=4" width="100px;" alt=""/><br /><sub><b>Cristina Matsunaga</b></sub></a><br /></a></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/109284556?v=4" width="100px;" alt=""/><br /><sub><b>Ester Carvalho</b></sub></a><br /></a></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/117312987?v=4" width="100px;" alt=""/><br /><sub><b>Luiz Felipe</b></sub></a><br /></a></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/102062514?v=4" width="100px;" alt=""/><br /><sub><b>Ivy Pires</b></sub></a><br /></a></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/117311923?v=4" width="100px;" alt=""/><br /><sub><b>Matheus Canel</b></sub></a><br /></a></td>
     
   </tr>
   <tr>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Thiago Araújo</b></sub></a><br /></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112591325?v=4" width="100px;" alt=""/><br /><sub><b>Thiago Araújo</b></sub></a><br /></td>
     <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Clarice Medeiros</b></sub></a><br /></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Leonardo Lima</b></sub></a><br /></td>
+    <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33106309?v=4" width="100px;" alt=""/><br /><sub><b>Leonardo Lima</b></sub></a><br /></td>
     <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Marinna Santos</b></sub></a><br /></td>
     <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Yanne Lopes</b></sub></a><br /></td>
     
