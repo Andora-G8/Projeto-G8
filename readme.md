@@ -152,9 +152,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
   </tr>
   <tr>
     <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112591325?v=4" width="100px;" alt=""/><br /><sub><b>Thiago Araújo</b></sub></a><br /></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Clarice Medeiros</b></sub></a><br /></td>
+    <td align="center"><img style="border-radius: 50%;" src="./assets/clarice.jpg" width="100px;" alt=""/><br /><sub><b>Clarice Medeiros</b></sub></a><br /></td>
     <td align="center"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33106309?v=4" width="100px;" alt=""/><br /><sub><b>Leonardo Lima</b></sub></a><br /></td>
-    <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Marinna Santos</b></sub></a><br /></td>
+    <td align="center"><img style="border-radius: 50%;" src="./assets/marinna.jpg" width="100px;" alt=""/><br /><sub><b>Marinna Santos</b></sub></a><br /></td>
     <td align="center"><img style="border-radius: 50%;" src="imagem-integrante" width="100px;" alt=""/><br /><sub><b>Yanne Lopes</b></sub></a><br /></td>
     
   </tr>
