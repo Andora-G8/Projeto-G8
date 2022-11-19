@@ -83,8 +83,8 @@ Este projeto é divido em três partes:
 
 Antes de começar, você vai precisar ter instalado: <br />
 [VSCode](https://code.visualstudio.com/) <br />
-[Biblioteca Pandas](https://pandas.pydata.org/) 
-
+[Biblioteca Pandas](https://pandas.pydata.org/)  <br />
+Certifique-se também que os arquivos .csv e .txt estejam com o caminho correto do seu pc
 
 ### 🎲 Rodando o main.py
 
